@@ -28,8 +28,6 @@ namespace MeetingOrganizer1.Controllers
             var status = false;
             using (DatabaseOrganizerEntities dc = new DatabaseOrganizerEntities())
             {
-                dc.Configuration.ProxyCreationEnabled = false;
-                Console.WriteLine(e.MeetingID);
                 if (e.MeetingID > 0)
                 {
                     //Update the event
